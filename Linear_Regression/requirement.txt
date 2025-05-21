@@ -1,0 +1,14 @@
+# Core Libraries
+numpy
+pandas
+
+# Model Training and Serialization
+scikit-learn
+joblib
+
+# Visualization (if used in EDA or Streamlit)
+matplotlib
+seaborn
+
+# Web App Framework
+streamlit

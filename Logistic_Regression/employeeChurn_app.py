@@ -3,6 +3,17 @@ import pandas as pd
 import joblib
 
 model = joblib.load('Logistic_Regression\employeeChurnModel.joblib')
+
+model_columns = [
+    'satisfaction_level',
+    'average_montly_hours',
+    'promotion_last_5years',
+    'salary_low',
+    'salary_medium',
+    'salary_high'
+]
+
+
 st.title("Employee Churn Predictor")
 
 satisfaction_level = st.slider("Satisfaction Level", 0.0, 1.0, 0.5)

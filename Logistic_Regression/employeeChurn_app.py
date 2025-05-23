@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('D:/ML-models/Logistic_Regression/employeeChurnModel.joblib')
-
+model_path = "Logistic_Regression/employeeChurnModel.joblib"
+model = joblib.load(model_path)
 st.title("Employee Churn Predictor")
 
 satisfaction_level = st.slider("Satisfaction Level", 0.0, 1.0, 0.5)

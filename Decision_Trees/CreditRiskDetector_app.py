@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model_path= 'Decision_Trees/CreditRiskDetector.joblib'
+model_path = 'Decision_Trees/CreditRiskDetector.joblib'
 model = joblib.load(model_path)
 
 st.title("Credit Risk Detector")
@@ -20,7 +20,13 @@ cb_person_default_on_file = st.selectbox('Person Default On File?', ['N', 'Y'])
 cb_person_cred_hist_length = st.number_input('Credit History Length (months)', min_value=0)
 
 home_ownership_map = {'RENT':0, 'OWN':1, 'MORTGAGE':2, 'OTHER':3}
-loan_intent_map = {'PERSONAL':0, 'EDUCATION':1, 'VENTURE':2, 'MEDICAL':3, 'HOMEIMPROVEMENT':4}
+loan_intent_map = {
+    'PERSONAL': 0,
+    'EDUCATION': 1,
+    'VENTURE': 2,
+    'MEDICAL': 3,
+    'HOME IMPROVEMENT': 4
+}
 loan_grade_map = {'A':0, 'B':1, 'C':2, 'D':3, 'E':4, 'F':5, 'G':6}
 default_map = {'N':0, 'Y':1}
 

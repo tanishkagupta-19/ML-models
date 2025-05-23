@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('Decision_Trees\CreditRiskDetector.joblib')
+model_path= 'Decision_Trees/CreditRiskDetector.joblib'
+model = joblib.load(model_path)
 
 st.title("Credit Risk Detector")
 

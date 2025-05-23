@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd
 import joblib
 import os
+
 print("Current working directory:", os.getcwd())
 print("Files in current directory:", os.listdir())
 
-model = joblib.load("HousePricePrediction.joblib")
+model_path = r"D:\ML-models\Linear_Regression\HousePricePrediction.joblib"
+model = joblib.load(model_path)
+
 model_features = ['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms',
                   'Avg. Area Number of Bedrooms', 'Area Population']
 
@@ -29,3 +32,4 @@ input_df = pd.DataFrame({
 if st.button('Predict House Price'):
     prediction = model.predict(input_df)
     st.success(f'Predicted House Price: ${prediction[0]:,.2f}')
+

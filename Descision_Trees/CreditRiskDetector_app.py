@@ -10,7 +10,7 @@ person_age = st.number_input('Person Age', min_value=18, max_value=100, value=30
 person_income = st.number_input('Person Income', min_value=0)
 person_home_ownership = st.selectbox('Home Ownership', ['RENT', 'OWN', 'MORTGAGE', 'OTHER'])
 person_emp_length = st.number_input('Employment Length (years)', min_value=0, max_value=50, value=5)
-loan_intent = st.selectbox('Loan Intent', ['PERSONAL', 'EDUCATION', 'VENTURE', 'MEDICAL', 'HOMEIMPROVEMENT'])
+loan_intent = st.selectbox('Loan Intent', ['PERSONAL', 'EDUCATION', 'VENTURE', 'MEDICAL', 'HOME IMPROVEMENT'])
 loan_grade = st.selectbox('Loan Grade', ['A', 'B', 'C', 'D', 'E', 'F', 'G'])
 loan_amnt = st.number_input('Loan Amount', min_value=0)
 loan_int_rate = st.number_input('Loan Interest Rate (%)', min_value=0.0, max_value=100.0, value=10.0)

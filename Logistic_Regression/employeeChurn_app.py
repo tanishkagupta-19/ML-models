@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('Logistic_Regression\employeeChurnModel.joblib')
+model = joblib.load('Logistic_Regression/employeeChurnModel.joblib')
 
 model_columns = [
     'satisfaction_level',

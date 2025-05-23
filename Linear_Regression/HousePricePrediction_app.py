@@ -6,7 +6,7 @@ import os
 print("Current working directory:", os.getcwd())
 print("Files in current directory:", os.listdir())
 
-model_path = r"D:\ML-models\Linear_Regression\HousePricePrediction.joblib"
+model_path = "Linear_Regression/HousePricePrediction.joblib"
 model = joblib.load(model_path)
 
 model_features = ['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms',

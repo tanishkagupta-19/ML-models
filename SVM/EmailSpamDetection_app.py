@@ -2,9 +2,14 @@ import streamlit as st
 import joblib
 import re
 import string
+import os
+print("Current working directory:", os.getcwd())
+print("Files in current directory:", os.listdir())
+model_path = "SVM/EmailSpamDetection.joblib"
+tfidf_path = "SVM/tfidf_vectorizer.joblib"
+model=joblib.load(model_path)
+tfidf=joblib.load(tfidf_path)
 
-model = joblib.load("SVM/EmailSpamDetection.joblib")
-tfidf = joblib.load("SVM/tfidf_vectorizer.joblib")
 def clean_text(text):
     text = text.lower()
     text = re.sub(r"http\S+|www.\S+", "", text)

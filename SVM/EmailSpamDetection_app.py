@@ -5,8 +5,8 @@ import string
 import os
 print("Current working directory:", os.getcwd())
 print("Files in current directory:", os.listdir())
-model_path = "SVM/EmailSpamDetection.joblib"
-tfidf_path = "SVM/tfidf_vectorizer.joblib"
+model_path = "EmailSpamDetection.joblib"
+tfidf_path = "tfidf_vectorizer.joblib"
 model=joblib.load(model_path)
 tfidf=joblib.load(tfidf_path)
 

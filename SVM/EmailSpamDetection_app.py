@@ -3,12 +3,11 @@ import joblib
 import re
 import string
 import os
-print("Current working directory:", os.getcwd())
-print("Files in current directory:", os.listdir())
-model_path = "EmailSpamDetection.joblib"
-tfidf_path = "tfidf_vectorizer.joblib"
-model=joblib.load(model_path)
-tfidf=joblib.load(tfidf_path)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(current_dir, "EmailSpamDetection.joblib")
+tfidf_path = os.path.join(current_dir, "tfidf_vectorizer.joblib")
+model = joblib.load(model_path)
+tfidf = joblib.load(tfidf_path)
 
 def clean_text(text):
     text = text.lower()
@@ -31,7 +30,7 @@ if st.button("🔍 Predict"):
         cleaned = clean_text(user_input)
         vectorized = tfidf.transform([cleaned])
         pred = model.predict(vectorized)[0]
-        
+
         if pred == 1:
             st.error("🚫 This is SPAM!")
         else:

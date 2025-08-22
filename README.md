@@ -95,7 +95,7 @@ A curated portfolio of end-to-end ML projects — data prep, EDA, model training
 4. Run the app
    ```bash
    streamlit run HousePricePrediction_app.py
-```
+
 📈 Results 
 
 - House Price Prediction: Accuracy ≈ 91%

@@ -101,7 +101,7 @@ A curated portfolio of end-to-end ML projects — data prep, EDA, model training
 - House Price Prediction: Accuracy ≈ 91%
 
 - Credit Risk Prediction: Decision Tree → Accuracy ≈ 91%, Recall (risky): 59%
-Random Forest → Accuracy ≈ 93%, Recall (risky): 71%
+Random Forest → Accuracy ≈ 93%, Recall (risky): 71% <br>
 ✅ +2.2% accuracy and better recall → Random Forest is more reliable for credit risk prediction.
 
 - Employee Churn: Accuracy ≈ 76%

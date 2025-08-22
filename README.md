@@ -46,9 +46,7 @@ A curated portfolio of end-to-end ML projects — data prep, EDA, model training
 │   ├── model.ipynb
 │   └── requirements.txt
 
-
----
-
+```
 ## 📝 Projects Overview
 
 ### 1) House Price Prediction — *Linear Regression*
@@ -97,6 +95,8 @@ A curated portfolio of end-to-end ML projects — data prep, EDA, model training
 4. Run the app
    ```bash
    streamlit run HousePricePrediction_app.py
+
+
 
 
 
